@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    display: grid;
+    text-align: center;
+    color: rgb(248, 250, 252);
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(245, 183, 193) 0%,
+        rgb(218, 132, 132) 20%,
+        rgb(248, 111, 248) 40%,
+        rgb(204, 0, 255) 60%,
+        rgb(144, 13, 177) 80%
+    );
+    background-size: 500% 500%;
+
+    animation: movimiento 20s linear infinite alternate-reverse;
+}
+
+@keyframes movimiento {
+    from{
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }   
+}
+
+
+h1 {color: black;
+    float: right;
+    font: 5vw "algerian";
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: rgb(240, 102, 240);
+    width: 86%;
+}
+
+img{
+    border-style: groove;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+h2{
+    color: white;
+    padding: 20px;
+
+}
+
+h3{
+    color: white;
+    padding: 10px;
+}
+li{
+   font-size: 1,5vw;
+   text-align: left;
+   padding: 2px;
+
+
+}
+
+.botones {
+    align-content: center;
+    justify-content: center;
+    display: grid;
+   
+}
+
+
+.boton {
+    border: 2px solid rgb(252, 161, 176);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+    font-size: 18px;
+    border-radius: 200px;
+    background-size: 300%;
+    background-color: pink;
+    font-family: "baskerville old face";
+    cursor: pointer;
+    color: black;
+   
+}
+
+.boton1 {
+    border: 2px solid rgb(248, 109, 130);
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-radius: 200px;
+    background-size: 300%;
+    background-color: rgb(192, 99, 114);
+    font-family: "baskerville old face";
+    cursor: pointer;
+    color: black;
+}
+
+.boton1:hover {
+     background-color: rgb(223, 128, 223);
+    color: rgb(239, 113, 243);
+}
+
+
+.boton:hover {
+    background-color: rgb(163, 19, 163);
+    color: rgb(252, 200, 208);
+    
+}
+
+
+.contenedor1{
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.contenedor2 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px
+}
+
+.contenedor3 {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .contenedor1, .contenedor2, .contenedor3 {width: 100%; }
+
+    .boton1 {    
+        font-size: 3vw;   }
+}
+
+
+#DATOS {
+    display: none;
+}
